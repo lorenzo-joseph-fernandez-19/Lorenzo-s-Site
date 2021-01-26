@@ -12,6 +12,8 @@ const Layout = ({ pageMeta, children }) => (
       <html lang="en"/>
       <meta name="description" content={pageMeta.description} />
       <meta name="keywords" content={pageMeta.keywords.join(',')} />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
       </Helmet>
       <div className="is-family-primary">
         {/* <Header /> */}

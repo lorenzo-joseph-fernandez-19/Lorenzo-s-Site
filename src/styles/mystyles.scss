@@ -1,13 +1,15 @@
-/* Bulma Styling */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@charset "utf-8";
-@import "../../node_modules/bulma/bulma.sass";
-@import "bulma";
+body {
+    background-color: #005B96;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
 
-@import "../../node_modules/bulma/sass/base/_all.sass";
-@import "../../node_modules/bulma/sass/components/_all.sass";
-@import "../../node_modules/bulma/sass/elements/_all.sass";
-@import "../../node_modules/bulma/sass/form/_all.sass";
-@import "../../node_modules/bulma/sass/grid/_all.sass";
-@import "../../node_modules/bulma/sass/layout/_all.sass";
-@import "../../node_modules/bulma/sass/utilities/_all.sass";
+li {
+    list-style: none;
+}
