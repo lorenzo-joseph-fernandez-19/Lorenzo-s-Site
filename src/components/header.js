@@ -1,22 +1,24 @@
 import React, { useRef, useEffect } from 'react'
-import {TweenMax, Power2} from 'gsap'
+import { gsap } from 'gsap'
 import { Link } from 'gatsby'
-import Logo from "../images/Logo.png"
 
 const Header = () => {
   let logo = useRef(null)
 
   useEffect(() => {
-    TweenMax.to(logo, 1, {opacity: 1, x: 60, ease: Power2.easeInOut, scale: 0.6})
+   gsap.to(logo, 1, {opacity: 1, y: 20})
   }, [])
 
 
   return (
    <div>
-     <ul>
-         <li>
-         <Link to="/"><img ref={el => {logo = el}} src={Logo} alt="Logo"/></Link>
-         </li>
+     <ul className="menu" ref={el => {logo = el}}>
+         <li className="header-item"><Link className="logo" to="/">Lorenzo Fernandez <span className="sub-logo">Front End Web Developer</span></Link></li>
+         <div className="nav-links">
+            <li><Link className="header-item" to="/">My Work</Link></li>
+            <li><Link className="header-item" to="/contact">Contact Me</Link></li>
+            <li><Link className="header-item" to="/contact">Hire Me!</Link></li>
+        </div>
      </ul>
    </div>
   )

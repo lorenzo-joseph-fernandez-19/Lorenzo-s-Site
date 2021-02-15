@@ -1,5 +1,7 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
+import Header from '../components/header'
+import Footer from '../components/footer'
 
 
 const Layout = ({ pageMeta, children }) => (
@@ -13,12 +15,12 @@ const Layout = ({ pageMeta, children }) => (
       <meta name="description" content={pageMeta.description} />
       <meta name="keywords" content={pageMeta.keywords.join(',')} />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet" />
       </Helmet>
-      <div className="is-family-primary">
-        {/* <Header /> */}
+      <div>
+        <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   )

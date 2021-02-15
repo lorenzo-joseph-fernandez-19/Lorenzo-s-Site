@@ -1,15 +1,132 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Nexa'), url('../fonts/NexaDemo-Bold.ttf') format('ttf');
+    }
 
 body {
     background-color: #005B96;
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;    
     color: white;
 }
 
+
 li {
     list-style: none;
+    display: inline;
+}
+
+.page-width {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* Header Styling */
+
+.menu {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sub-logo:before {
+  content: "\A";
+  white-space: pre;
+}
+
+.sub-logo{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    line-height: 0.5;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: 'Nexa', sans-serif; 
+}
+
+.header-item {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-right: 30px;   
+}
+
+.header-item:hover {
+    color: rgba($color: white, $alpha: 0.6); 
+}
+
+.hero-title {
+    // font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-block;
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-links {
+    position: absolute;
+    left: 70%;
+}
+
+.button {
+    border-radius: 12px;
+    border: 1px solid ;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Index Styling */
+
+.about {
+    background-color: white;
+    color: #005B96;
+}
+
+
+
+
+/* Contact Styling */
+
+.centered {
+    position: absolute;
+    top: 30%;
+    right: 50%;
+}
+
+/* Footer Styling */
+
+.footer {
+    background-color: #011F4B;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+   }
+
+.icon-spacing {
+    position: absolute;
+    left: 80%;
+}
+
+.footer-icon {
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.footer-icon:hover {
+    color: rgba($color: white, $alpha: 0.6);
 }
