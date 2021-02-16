@@ -17,7 +17,7 @@ const Header = () => {
          <div className="nav-links">
             <li><Link className="header-item" to="/">My Work</Link></li>
             <li><Link className="header-item" to="/contact">Contact Me</Link></li>
-            <li><Link className="header-item" to="/contact">Hire Me!</Link></li>
+            <li><Link className="header-item" to="/resume">Hire Me!</Link></li>
         </div>
      </ul>
    </div>

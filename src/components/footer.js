@@ -8,19 +8,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer = () => {
     return (
         <footer className="footer">
-            <Link to="/resume" >Check out my Resume</Link>
-            <ul className="page-width menu">
+            <ul className="page-width">
+                <p>Check out my <Link className="is-white" to="/resume">Resume</Link> </p>
+                <div className="menu">
                 <li>Designed & Developed by Lorenzo Fernandez <br />
                 {`Copyright © ${new Date().getFullYear()}  LF NZ LTD.`}</li>
-                <div className="icon-spacing">
-                <li><OutboundLink href="https://www.linkedin.com/in/fernandezlorenzo/" rel="noreferrer noopener" target="_blank">
-                    <FontAwesomeIcon className="footer-icon" icon={['fab', 'linkedin-in']} />
-                    </OutboundLink>
-                </li>
-                <li><OutboundLink href="https://github.com/lorenzo-joseph-fernandez-19" rel="noreferrer noopener" target="_blank">
-                    <FontAwesomeIcon className="footer-icon" icon={['fab', 'github']} />
-                    </OutboundLink>
-                </li>
+                    <div className="icon-spacing">
+                        <li><OutboundLink href="https://www.linkedin.com/in/fernandezlorenzo/" rel="noreferrer noopener" target="_blank">
+                            <FontAwesomeIcon className="footer-icon" icon={['fab', 'linkedin-in']} />
+                            </OutboundLink>
+                        </li>
+                        <li><OutboundLink href="https://github.com/lorenzo-joseph-fernandez-19" rel="noreferrer noopener" target="_blank">
+                            <FontAwesomeIcon className="footer-icon" icon={['fab', 'github']} />
+                            </OutboundLink>
+                        </li>
+                        <li><OutboundLink href="mailto:lorenzojofernandez@gmail.com" rel="noreferrer noopener">
+                            <FontAwesomeIcon className="footer-icon" icon={['fa', 'envelope']} />
+                            </OutboundLink>
+                        </li>
+                    </div>
                 </div>
             </ul>
         </footer>
