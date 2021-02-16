@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer = () => {
     return (
         <footer className="footer">
+            <Link to="/resume" >Check out my Resume</Link>
             <ul className="page-width menu">
                 <li>Designed & Developed by Lorenzo Fernandez <br />
                 {`Copyright © ${new Date().getFullYear()}  LF NZ LTD.`}</li>
